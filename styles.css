@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('btc.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* White text for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 51, 0.8); /* Dark blue semi-transparent background */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+}
+
+#crypto-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.crypto {
+    background-color: rgba(0, 51, 102, 0.8); /* Dark blue semi-transparent background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Slightly darker shadow */
+}
+
+form {
+    background: rgba(0, 51, 102, 0.8); /* Dark blue semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the form */
+    color: #fff;
+}
+
+input {
+    width: calc(100% - 20px); /* Responsive input width */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #000; /* Black text for inputs */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0099ff; /* Lighter blue for buttons */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0066cc; /* Darker blue on hover */
+}
+

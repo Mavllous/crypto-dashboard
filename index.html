@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crypto Dashboard</h1>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Email:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="crypto-info" style="display: none;">
+            <h2>Welcome, Judy Nuckols</h2>
+            <p>Email: suenuckolsjudy@gmail.com</p>
+            <p>Balance: <span id="balance">$287,078.00 in Bitcoin</span></p>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+            <div id="crypto-data"></div> <!-- Container for crypto data -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
