@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
     const cryptoInfo = document.getElementById('crypto-info');
     const balanceElement = document.getElementById('balance');
-
+    
     const user = {
         username: 'Judy Nuckols',
         email: 'suenuckolsjudy@gmail.com',
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function fetchCryptoData() {
         const apiUrl = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd';
         const cryptoDataContainer = document.getElementById('crypto-data');
-
+        
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
@@ -54,6 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => console.error('Error fetching data:', error));
     }
+
+    document.getElementById('depositBtn').addEventListener('click', function() {
+        document.getElementById('depositPage').classList.remove('hidden');
+        document.querySelector('.account-details').classList.add('hidden');
+    });
+
+    document.getElementById('withdrawBtn').addEventListener('click', function() {
+        document.getElementById('withdrawMessage').classList.remove('hidden');
+        document.querySelector('.account-details').classList.add('hidden');
+    });
 });
 
 function deposit() {
@@ -61,6 +71,6 @@ function deposit() {
 }
 
 function withdraw() {
-    alert('Withdrawal functionality not yet implemented.');
+    alert('Continue investing until stakes are high!');
 }
 

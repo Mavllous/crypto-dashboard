@@ -23,7 +23,6 @@
                 <button type="submit">Login</button>
             </form>
         </section>
-
         <section id="crypto-info" style="display: none;">
             <h2>Welcome, Judy Nuckols</h2>
             <p>Email: suenuckolsjudy@gmail.com</p>
@@ -31,9 +30,14 @@
             <button onclick="deposit()">Deposit</button>
             <button onclick="withdraw()">Withdraw</button>
             <div id="crypto-data"></div> <!-- Container for crypto data -->
+            <div id="withdrawMessage" class="hidden">
+                <h2>Continue investing until stakes are high!</h2>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Crypto Dashboard. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
