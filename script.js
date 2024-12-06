@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const user = {
         username: 'Judy Nuckols',
         email: 'suenuckolsjudy@gmail.com',
-        balance: 287078
+        balance: 407078
     };
 
     loginForm.addEventListener('submit', (e) => {
